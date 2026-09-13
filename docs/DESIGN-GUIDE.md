@@ -1,5 +1,14 @@
 # Sky Tech Energy — Design Guide
 
+> Revision note (god, 2026-09-13T07:20Z): god authored a brief v1 fallback guide
+> (07:05Z) which the frontend-engineer built against (implementation palette
+> #0E3A5D / #2FA84F). This document is the designer's v2 — richer, palette sampled
+> directly from the creative artwork — and is CANONICAL going forward. Minor
+> palette drift between v1 tokens in code and v2 tokens here is accepted for the
+> initial build and is a candidate for a vision-led polish pass. Creative crops:
+> instagram-post-1..4.jpg are art-only (IG chrome excluded; post-1 re-cropped by
+> god at y1620 h640, OCR-verified).
+
 This document drives the single-page site build for the frontend-engineer agent. It is
 the design counterpart of `CONTENT.md` (the authoritative content contract). Every
 section listed here corresponds 1:1 with the 12 sections specified in
