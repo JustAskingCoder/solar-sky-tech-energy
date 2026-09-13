@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container-site grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2 lg:col-span-1">
           <div className="flex items-center gap-2">
-            <img src="/images/logo.png" alt="" className="h-10 w-auto" />
+            <img src="./images/logo.png" alt="" className="h-10 w-auto" />
             <span className="text-lg font-extrabold tracking-tight">Sky Tech Energy</span>
           </div>
           <p className="mt-4 font-semibold text-accent-300">“{SITE.tagline}”</p>

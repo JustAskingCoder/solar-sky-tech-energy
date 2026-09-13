@@ -69,19 +69,19 @@ export const SOLUTIONS = [
   {
     title: 'Residential',
     text: 'Rooftop solar for homes — right-sized systems that cut monthly bills and qualify for the PM Surya Ghar subsidy.',
-    image: '/images/solar-home.jpg',
+    image: './images/solar-home.jpg',
     alt: 'Rooftop solar panels on a modern home',
   },
   {
     title: 'Commercial',
     text: 'Solar solutions for offices, shops and commercial premises to reduce operating costs and meet sustainability goals.',
-    image: '/images/solar-commercial.jpg',
+    image: './images/solar-commercial.jpg',
     alt: 'Solar panels installed on a commercial rooftop',
   },
   {
     title: 'Industrial',
     text: 'High-capacity rooftop systems for factories and industrial units built for scale and reliable long-term output.',
-    image: '/images/solar-industrial.jpg',
+    image: './images/solar-industrial.jpg',
     alt: 'Large solar array on an industrial building',
   },
 ]
@@ -183,7 +183,7 @@ export const FAQS = [
 ]
 
 export const OFFERS = Array.from({ length: 4 }, (_, i) => ({
-  src: `/images/instagram-post-${i + 1}.jpg`,
+  src: `./images/instagram-post-${i + 1}.jpg`,
   alt: `Sky Tech Energy promotional creative ${i + 1}`,
 }))
 

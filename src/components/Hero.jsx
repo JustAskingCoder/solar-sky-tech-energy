@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative isolate overflow-hidden">
       <img
-        src="/images/hero-solar.jpg"
+        src="./images/hero-solar.jpg"
         alt="Rooftop solar panels under a bright sky"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
