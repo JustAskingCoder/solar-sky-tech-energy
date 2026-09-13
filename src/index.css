@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent-100 text-accent-900;
+  }
+}
+
+@layer utilities {
+  .container-site {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Anchor targets clear the sticky navbar */
+  [id] {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-900 px-6 py-3 text-white shadow-card hover:bg-primary-950 hover:shadow-lift focus-visible:ring-primary-500 active:scale-[0.98];
+  }
+
+  .btn-accent {
+    @apply btn bg-accent-500 px-6 py-3 text-white shadow-card hover:bg-accent-600 hover:shadow-lift focus-visible:ring-accent-400 active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-primary-900 px-6 py-3 text-primary-900 hover:bg-primary-50 focus-visible:ring-primary-500 active:scale-[0.98];
+  }
+
+  .btn-outline-light {
+    @apply btn border-2 border-white/80 px-6 py-3 text-white hover:bg-white/10 focus-visible:ring-white active:scale-[0.98];
+  }
+
+  .card {
+    @apply rounded-2xl bg-white p-6 shadow-card;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-accent-100 px-4 py-1.5 text-sm font-semibold text-accent-800;
+  }
+}
