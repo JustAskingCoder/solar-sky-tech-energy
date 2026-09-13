@@ -1,10 +1,12 @@
 import { WHY_SKY_TECH } from '../data'
 import { ICON_MAP } from './Icons'
+import SolarPanels from './SolarPanels'
 
 export default function WhySkyTech() {
   return (
-    <section id="about" className="bg-white py-16 sm:py-20">
-      <div className="container-site">
+    <section id="about" className="relative overflow-hidden bg-white py-16 sm:py-20">
+      <SolarPanels className="section-panels" id="aboutpv" />
+      <div className="container-site relative">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[2fr_3fr]">
           <div>
             <span className="eyebrow">Why Sky Tech Energy</span>

@@ -1,5 +1,6 @@
 import { SITE } from '../data'
 import { Check, Phone } from './Icons'
+import SolarPanels from './SolarPanels'
 
 const HIGHLIGHTS = [
   'Solar Savings',
@@ -51,6 +52,8 @@ export default function Hero() {
         <div className="hero-panel-strip">
           <div className="hero-panel-sheen" />
         </div>
+
+        <SolarPanels className="hero-panels" id="heropv" />
       </div>
 
       <div className="container-site relative z-10 flex flex-col items-start justify-center py-20 sm:py-24 lg:min-h-[640px] lg:py-28">
