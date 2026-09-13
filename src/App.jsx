@@ -10,6 +10,19 @@ import InstagramPosts from './components/InstagramPosts'
 import FAQ from './components/FAQ'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
+import Reveal from './components/Reveal'
+
+const SECTIONS = [
+  SubsidySection,
+  Benefits,
+  Solutions,
+  Process,
+  Calculator,
+  WhySkyTech,
+  InstagramPosts,
+  FAQ,
+  ContactForm,
+]
 
 export default function App() {
   return (
@@ -17,15 +30,11 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <SubsidySection />
-        <Benefits />
-        <Solutions />
-        <Process />
-        <Calculator />
-        <WhySkyTech />
-        <InstagramPosts />
-        <FAQ />
-        <ContactForm />
+        {SECTIONS.map((Section, i) => (
+          <Reveal key={i} delay={i * 60}>
+            <Section />
+          </Reveal>
+        ))}
       </main>
       <Footer />
     </div>

@@ -33,11 +33,11 @@
   }
 
   .btn-primary {
-    @apply btn bg-primary-900 px-6 py-3 text-white shadow-card hover:bg-primary-950 hover:shadow-lift focus-visible:ring-primary-500 active:scale-[0.98];
+    @apply btn relative overflow-hidden bg-primary-900 px-6 py-3 text-white shadow-card hover:bg-primary-950 hover:shadow-lift focus-visible:ring-primary-500 active:scale-[0.98];
   }
 
   .btn-accent {
-    @apply btn bg-accent-500 px-6 py-3 text-white shadow-card hover:bg-accent-600 hover:shadow-lift focus-visible:ring-accent-400 active:scale-[0.98];
+    @apply btn relative overflow-hidden bg-accent-500 px-6 py-3 text-white shadow-card hover:bg-accent-600 hover:shadow-lift focus-visible:ring-accent-400 active:scale-[0.98];
   }
 
   .btn-outline {
@@ -54,5 +54,215 @@
 
   .eyebrow {
     @apply inline-flex items-center gap-2 rounded-full bg-accent-100 px-4 py-1.5 text-sm font-semibold text-accent-800;
+  }
+}
+
+/* ---------- Ambient page background ---------- */
+body {
+  background-color: #fbfdfc;
+  background-image:
+    radial-gradient(1100px 520px at 92% -8%, rgba(47, 168, 79, 0.07), transparent 60%),
+    radial-gradient(900px 480px at -8% 0%, rgba(14, 58, 93, 0.06), transparent 55%);
+  background-attachment: fixed;
+}
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal.is-inview {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- CTA sheen ---------- */
+.btn-accent::after,
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: translateX(-140%) skewX(-20deg);
+  pointer-events: none;
+}
+
+.btn-accent:hover::after,
+.btn-primary:hover::after {
+  animation: btnSheen 0.9s ease;
+}
+
+@keyframes btnSheen {
+  from { transform: translateX(-140%) skewX(-20deg); }
+  to { transform: translateX(420%) skewX(-20deg); }
+}
+
+/* ---------- Hero scene ---------- */
+.hero-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-sun {
+  position: absolute;
+  display: block;
+}
+
+.hero-sun-core {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle at 42% 40%,
+    #fff7d6 0%,
+    #ffe08a 28%,
+    rgba(245, 179, 1, 0.85) 58%,
+    rgba(240, 150, 20, 0.25) 100%
+  );
+  box-shadow:
+    0 0 90px 40px rgba(255, 214, 120, 0.45),
+    0 0 40px 12px rgba(255, 224, 138, 0.35);
+  animation: sunPulse 6s ease-in-out infinite;
+}
+
+.hero-ray-ring {
+  position: absolute;
+  inset: -55%;
+  border-radius: 9999px;
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(255, 224, 138, 0.45) 0deg 6deg,
+    transparent 6deg 18deg
+  );
+  -webkit-mask: radial-gradient(circle, transparent 34%, #000 36%);
+  mask: radial-gradient(circle, transparent 34%, #000 36%);
+  animation: spinSlow 70s linear infinite;
+  opacity: 0.6;
+}
+
+.hero-glow-secondary {
+  position: absolute;
+  top: -18%;
+  left: -10%;
+  width: 52vw;
+  height: 52vw;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(47, 168, 79, 0.2), transparent 62%);
+  filter: blur(30px);
+  animation: glowDrift 16s ease-in-out infinite;
+}
+
+.hero-particle {
+  position: absolute;
+  bottom: -3%;
+  border-radius: 9999px;
+  background: #ffe08a;
+  box-shadow: 0 0 8px 2px rgba(255, 224, 138, 0.55);
+  opacity: 0;
+  animation-name: driftUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.hero-panel-strip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: clamp(64px, 12vh, 120px);
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.09) 0 2px, transparent 2px 28px),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0 2px, transparent 2px 10px),
+    linear-gradient(180deg, rgba(8, 35, 59, 0) 0%, rgba(8, 35, 59, 0.55) 60%, rgba(8, 35, 59, 0.85) 100%);
+  -webkit-mask: linear-gradient(180deg, transparent, #000 70%);
+  mask: linear-gradient(180deg, transparent, #000 70%);
+  overflow: hidden;
+}
+
+.hero-panel-sheen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 46%;
+  background: linear-gradient(90deg, transparent, rgba(255, 232, 168, 0.28), transparent);
+  animation: panelSweep 9s ease-in-out infinite;
+}
+
+.hero-anim {
+  animation: heroUp 0.75s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@keyframes sunPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes glowDrift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.8; }
+  50% { transform: translate3d(6%, 4%, 0) scale(1.12); opacity: 1; }
+}
+
+@keyframes driftUp {
+  0% { transform: translate3d(0, 0, 0); opacity: 0; }
+  8% { opacity: 1; }
+  85% { opacity: 0.85; }
+  100% { transform: translate3d(2vw, -46vh, 0); opacity: 0; }
+}
+
+@keyframes panelSweep {
+  0% { transform: translateX(-120%); }
+  55% { transform: translateX(340%); }
+  100% { transform: translateX(340%); }
+}
+
+@keyframes heroUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .hero-anim,
+  .hero-sun-core,
+  .hero-ray-ring,
+  .hero-glow-secondary,
+  .hero-particle,
+  .hero-panel-sheen {
+    animation: none !important;
+  }
+
+  .hero-particle { display: none; }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .btn-accent::after,
+  .btn-primary::after {
+    animation: none !important;
+    transform: none !important;
+    opacity: 0 !important;
   }
 }
