@@ -1,5 +1,5 @@
 import { SITE, SUBSIDY } from '../data'
-import { Phone } from './Icons'
+import { Mail, Phone } from './Icons'
 
 export default function Hero() {
   return (
@@ -14,20 +14,29 @@ export default function Hero() {
         <div className="container-site flex flex-col items-center justify-between gap-3 py-5 text-sm lg:flex-row lg:gap-6">
           <div>
             <p className="text-xs font-bold uppercase tracking-wide text-accent-600">Get In Touch</p>
-            <a
-              href="tel:+919307870422"
-              className="mt-1 inline-flex items-center gap-2 font-semibold text-primary-900 hover:text-primary-700"
-            >
-              <Phone className="h-4 w-4" />
-              {SITE.phones.join(' · ')}
-            </a>
+            <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
+              <a
+                href="tel:+919307870422"
+                className="inline-flex items-center gap-2 font-semibold text-primary-900 hover:text-primary-700"
+              >
+                <Phone className="h-4 w-4" />
+                {SITE.phones.join(' · ')}
+              </a>
+              <span className="hidden text-muted sm:inline">·</span>
+              <a
+                href={`mailto:${SITE.email}`}
+                className="inline-flex items-center gap-1.5 font-semibold text-primary-900 hover:text-primary-700"
+              >
+                <Mail className="h-4 w-4" />
+                {SITE.email}
+              </a>
+            </div>
           </div>
 
           <div className="text-center">
             <p className="text-xs font-bold uppercase tracking-wide text-accent-600">PM Surya Ghar Subsidy</p>
             <p className="mt-1 font-semibold text-primary-900">
               {SUBSIDY.map((s) => `${s.capacity} ${s.amount}`).join('  ·  ')}
-              <span className="ml-3 text-muted">3 kW total ₹1,90,000</span>
             </p>
           </div>
 

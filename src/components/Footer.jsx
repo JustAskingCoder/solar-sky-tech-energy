@@ -1,5 +1,5 @@
 import { NAV_LINKS, SITE } from '../data'
-import { Instagram, Phone, WhatsApp } from './Icons'
+import { Instagram, Mail, Phone, WhatsApp } from './Icons'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -41,6 +41,12 @@ export default function Footer() {
                 </a>
               </li>
             ))}
+            <li>
+              <a href={`mailto:${SITE.email}`} className="inline-flex items-center gap-2 text-sm text-white/75 transition-colors hover:text-white">
+                <Mail className="h-4 w-4" />
+                <span>{SITE.email}</span>
+              </a>
+            </li>
           </ul>
           <p className="mt-4 text-sm text-white/75">{SITE.website}</p>
         </div>

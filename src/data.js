@@ -4,6 +4,7 @@ export const SITE = {
   offering: 'Solar EPC & Energy Solutions',
   segments: ['Residential', 'Commercial', 'Industrial'],
   website: 'www.skytechenerg.in',
+  email: 'skytechenergy03@gmail.com',
   phones: ['9307870422', '7448224139', '9699462881'],
   whatsapp: '919307870422',
 }
@@ -182,7 +183,7 @@ export const FAQS = [
   },
 ]
 
-export const OFFERS = Array.from({ length: 4 }, (_, i) => ({
+export const OFFERS = Array.from({ length: 3 }, (_, i) => ({
   src: `./images/instagram-post-${i + 1}.jpg`,
   alt: `Sky Tech Energy promotional creative ${i + 1}`,
 }))

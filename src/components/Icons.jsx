@@ -143,6 +143,13 @@ export const Instagram = (p) => (
   </Icon>
 )
 
+export const Mail = (p) => (
+  <Icon {...p}>
+    <rect x="3" y="5" width="18" height="14" rx="2" />
+    <path d="M3 7l9 6 9-6" />
+  </Icon>
+)
+
 export const Menu = (p) => (
   <Icon {...p}>
     <path d="M4 7h16M4 12h16M4 17h16" />
@@ -195,4 +202,5 @@ export const ICON_MAP = {
   subsidy: Subsidy,
   epc: EPC,
   support: Support,
+  mail: Mail,
 }

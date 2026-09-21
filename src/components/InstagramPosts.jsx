@@ -14,7 +14,7 @@ export default function InstagramPosts() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {OFFERS.map((offer, index) => (
             <article key={offer.src} className="card group flex flex-col overflow-hidden p-0">
               <div className="overflow-hidden bg-primary-100">
@@ -50,8 +50,11 @@ export default function InstagramPosts() {
         </div>
 
         <p className="mt-8 text-center text-sm text-muted">
-          For this and other offers, call {SITE.phones.join(' · ')} or write to us — we are
-          happy to help.
+          For this and other offers, call {SITE.phones.join(' · ')} or email{' '}
+          <a href={`mailto:${SITE.email}`} className="font-semibold text-primary-800 underline">
+            {SITE.email}
+          </a>{' '}
+          — we are happy to help.
         </p>
       </div>
     </section>

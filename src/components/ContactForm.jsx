@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { CONTACT_DEFAULTS, SITE } from '../data'
-import { Check, Phone, WhatsApp } from './Icons'
+import { Check, Mail, Phone, WhatsApp } from './Icons'
 
 const CUSTOMER_TYPES = ['Residential', 'Commercial', 'Industrial']
 
@@ -91,6 +91,17 @@ export default function ContactForm() {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href={`mailto:${SITE.email}`}
+                  className="inline-flex items-center gap-3 text-lg font-semibold text-white transition-colors hover:text-accent-300"
+                >
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary-800 text-accent-300">
+                    <Mail className="h-5 w-5" />
+                  </span>
+                  {SITE.email}
+                </a>
+              </li>
             </ul>
 
             <a
@@ -104,8 +115,11 @@ export default function ContactForm() {
             </a>
 
             <p className="mt-6 text-sm text-white/70">
-              Prefer email or the web? Visit{' '}
-              <span className="font-semibold text-accent-300">{SITE.website}</span>.
+              Prefer email or the web? Write to{' '}
+              <a href={`mailto:${SITE.email}`} className="font-semibold text-accent-300 underline">
+                {SITE.email}
+              </a>{' '}
+              or visit <span className="font-semibold text-accent-300">{SITE.website}</span>.
             </p>
           </div>
 

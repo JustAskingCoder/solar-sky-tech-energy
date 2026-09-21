@@ -24,11 +24,12 @@ cities, or turnaround times.**
 | Tagline | "Powering a Sustainable Future" | post 2 |
 | Offering | Solar EPC & Energy Solutions; Residential / Commercial / Industrial | post 2 footer + human |
 | Website | www.skytechenerg.in | post 1 |
+| Email | skytechenergy03@gmail.com | human request (2026-09-21) |
 | Phone 1 | 9307870422 | posts 2, 3, 4 |
 | Phone 2 | 7448224139 | posts 3, 4 |
 | Phone 3 | 9699462881 | posts 2, 3, 4 |
 | Subsidy (PM Surya Ghar) | 1 kW → ₹30,000; 2 kW → ₹60,000; 3 kW → ₹78,000 | posts 1 & 3 |
-| 3 kW system total | ₹1,90,000 (before subsidy) | post 4 |
+| 3 kW system total | ₹1,90,000 (removed from hero strip per human request; post 4 removed from site) | post 4 (archived) |
 | Offers shown | Zero Down Payment; Loan Facility; Professional Installation + Subsidy Assistance Available | post 2 |
 | Panel/module brands shown | Adani, Waaree, Polycab, Fujiyama | posts 3 & 4 |
 
