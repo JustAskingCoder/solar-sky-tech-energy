@@ -1,4 +1,4 @@
-# Sky Tech Energy — site content contract (authoritative)
+# The Sky Tech Energy — site content contract (authoritative)
 
 Read this first. Every number and claim on the site must trace to this file or
 to the creatives themselves. **Do not invent facts, prices, statistics, awards,
@@ -20,7 +20,7 @@ cities, or turnaround times.**
 
 | Fact | Value | Where verified |
 |---|---|---|
-| Company | Sky Tech Energy | all 4 creatives |
+| Company | The Sky Tech Energy (renamed from Sky Tech Energy per human request 2026-09-22) | human request |
 | Tagline | "Powering a Sustainable Future" | post 2 |
 | Offering | Solar EPC & Energy Solutions; Residential / Commercial / Industrial | post 2 footer + human |
 | Website | www.skytechenerg.in | post 1 |
@@ -44,7 +44,7 @@ cities, or turnaround times.**
   presence, service-area city lists, turnaround days, warranty years, "₹/unit
   savings", average bill-reduction percentages.
 - If a section begs for one of these, write neutral wording or a
-  "confirm with Sky Tech Energy" line.
+  "confirm with The Sky Tech Energy" line.
 
 ## Spec summary (full brief from the human — god, 2026-09-13)
 
@@ -53,7 +53,7 @@ React components: `Navbar Hero SubsidySection Benefits Solutions Process
 Calculator InstagramPosts FAQ ContactForm Footer`.
 
 Sections (in order):
-1. **Navbar** — logo "Sky Tech Energy"; links Home/About/Solar Solutions/PM
+1. **Navbar** — logo "The Sky Tech Energy"; links Home/About/Solar Solutions/PM
    Surya Ghar/Why Solar/Process/FAQs/Contact; CTA "Get Free Consultation";
    hamburger on mobile.
 2. **Hero** — strong rooftop-solar headline; highlights = solar savings, PM
@@ -72,10 +72,10 @@ Sections (in order):
 7. **Savings calculator** — interactive; inputs monthly bill (+ optional
    consumption); outputs recommended capacity, estimated savings, approximate
    cost, subsidy, estimated final cost. Clearly label all results "Estimated /
-   Indicative calculation" and "not an official Sky Tech Energy quotation".
+   Indicative calculation" and "not an official The Sky Tech Energy quotation".
    Anchor math to the verified subsidy table and ₹1,90,000 3 kW figure; keep
    assumptions transparent.
-8. **Why Sky Tech Energy** — Solar EPC & Energy Solutions; Residential /
+8. **Why The Sky Tech Energy** — Solar EPC & Energy Solutions; Residential /
    Commercial / Industrial; professional installation; subsidy assistance;
    customer-focused service. No invented credentials.
 9. **Offers / creatives** — display the 4 promo creatives as clean cards (crop
@@ -91,7 +91,7 @@ Sections (in order):
     Bill, Customer Type (Residential/Commercial/Industrial). Button "Get Free
     Consultation". Static handler — show a success state; optionally WhatsApp
     deep-link to 9307870422 (label clearly).
-12. **Footer** — Sky Tech Energy, "Powering a Sustainable Future", "Solar EPC &
+12. **Footer** — The Sky Tech Energy, "Powering a Sustainable Future", "Solar EPC &
     Energy Solutions", Residential | Commercial | Industrial, phone(s) above,
     quick links, WhatsApp + Instagram links (use www.skytechenerg.in where an
     owned URL is needed; no invented address).

@@ -9,12 +9,12 @@ export default function WhySkyTech() {
       <div className="container-site relative">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[2fr_3fr]">
           <div>
-            <span className="eyebrow">Why Sky Tech Energy</span>
+            <span className="eyebrow">Why The Sky Tech Energy</span>
             <h2 className="heading mt-4 text-3xl sm:text-4xl">
               Your Trusted Solar EPC &amp; Energy Partner
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-muted">
-              Sky Tech Energy delivers Solar EPC &amp; Energy Solutions for Residential,
+              The Sky Tech Energy delivers Solar EPC &amp; Energy Solutions for Residential,
               Commercial and Industrial rooftops — with professional installation, subsidy
               assistance and customer-focused service from first call to long after
               activation.

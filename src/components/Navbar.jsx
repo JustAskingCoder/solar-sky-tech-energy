@@ -35,10 +35,10 @@ export default function Navbar() {
       }`}
     >
       <nav aria-label="Main" className="container-site flex items-center justify-between gap-4 py-3">
-        <a href="#home" className="flex shrink-0 items-center gap-2" aria-label="Sky Tech Energy — home">
-          <img src="./images/logo.png" alt="" className="h-9 w-auto" />
+        <a href="#home" className="flex shrink-0 items-center gap-2" aria-label="The Sky Tech Energy — home">
+          <img src="./images/logo.png" alt="The Sky Tech Energy logo" className="h-9 w-auto" />
           <span className="hidden text-base font-extrabold tracking-tight text-primary-900 sm:block">
-            Sky Tech Energy
+            The Sky Tech Energy
           </span>
         </a>
 

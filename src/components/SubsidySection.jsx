@@ -11,7 +11,7 @@ export default function SubsidySection() {
             Government Subsidy on Rooftop Solar
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            Verified central government subsidy on rooftop solar systems. Sky Tech Energy
+            Verified central government subsidy on rooftop solar systems. The Sky Tech Energy
             assists you with the application from start to finish.
           </p>
         </div>

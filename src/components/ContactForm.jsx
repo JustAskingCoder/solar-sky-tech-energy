@@ -25,7 +25,7 @@ export default function ContactForm() {
   }
 
   const whatsappText = encodeURIComponent(
-    `Hello Sky Tech Energy, I'd like a free solar consultation.\nName: ${form.name}\nCity: ${form.city}\nCustomer type: ${form.customerType}`
+    `Hello The Sky Tech Energy, I'd like a free solar consultation.\nName: ${form.name}\nCity: ${form.city}\nCustomer type: ${form.customerType}`
   )
 
   if (submitted) {
@@ -105,7 +105,7 @@ export default function ContactForm() {
             </ul>
 
             <a
-              href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Hello Sky Tech Energy, I would like a free solar consultation.')}`}
+              href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Hello The Sky Tech Energy, I would like a free solar consultation.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-accent mt-8"
@@ -230,7 +230,7 @@ export default function ContactForm() {
             <p className="mt-4 text-center text-xs leading-relaxed text-muted">
               This is a consultation request only — not a binding quotation. Prefer WhatsApp?{' '}
               <a
-                href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Hello Sky Tech Energy, I would like a free solar consultation.')}`}
+                href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Hello The Sky Tech Energy, I would like a free solar consultation.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-accent-600 underline-offset-2 hover:underline"

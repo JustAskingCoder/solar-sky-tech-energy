@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="home">
       <img
         src="./images/hero-banner.png"
-        alt="Sky Tech Energy — Clean Energy, Brighter Tomorrow. Switch to solar and save on electricity bills. PM Surya Ghar subsidy support."
+        alt="The Sky Tech Energy — Clean Energy, Brighter Tomorrow. Switch to solar and save on electricity bills. PM Surya Ghar subsidy support."
         className="block w-full object-cover"
       />
 

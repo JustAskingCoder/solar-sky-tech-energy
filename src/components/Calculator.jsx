@@ -276,7 +276,7 @@ export default function Calculator() {
               <p className="flex items-start gap-2">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" />
                 All figures are <strong>Estimated / Indicative calculations for planning only</strong> — not an
-                official Sky Tech Energy quotation.
+                official The Sky Tech Energy quotation.
               </p>
               <p className="flex items-start gap-2">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" />
@@ -285,7 +285,7 @@ export default function Calculator() {
               </p>
               <p className="flex items-start gap-2">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent-600" />
-                Contact Sky Tech Energy for a precise, site-survey-based quotation.
+                Contact The Sky Tech Energy for a precise, site-survey-based quotation.
               </p>
             </div>
           </div>

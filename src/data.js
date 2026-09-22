@@ -1,5 +1,5 @@
 export const SITE = {
-  name: 'Sky Tech Energy',
+  name: 'The Sky Tech Energy',
   tagline: 'Powering a Sustainable Future',
   offering: 'Solar EPC & Energy Solutions',
   segments: ['Residential', 'Commercial', 'Industrial'],
@@ -155,7 +155,7 @@ export const FAQS = [
   },
   {
     q: 'What is PM Surya Ghar?',
-    a: 'PM Surya Ghar: Muft Bijli Yojana is the central government\u2019s rooftop solar scheme. It provides a direct subsidy per verified capacity — currently 1 kW (₹30,000), 2 kW (₹60,000) and 3 kW (₹78,000). Sky Tech Energy assists with the application process.',
+    a: 'PM Surya Ghar: Muft Bijli Yojana is the central government\u2019s rooftop solar scheme. It provides a direct subsidy per verified capacity — currently 1 kW (₹30,000), 2 kW (₹60,000) and 3 kW (₹78,000). The Sky Tech Energy assists with the application process.',
   },
   {
     q: 'How does solar lower my electricity bill?',
@@ -167,7 +167,7 @@ export const FAQS = [
   },
   {
     q: 'How does the subsidy work?',
-    a: 'Under PM Surya Ghar, the central government provides a verified subsidy of ₹30,000 / ₹60,000 / ₹78,000 for 1 / 2 / 3 kW rooftop systems. The subsidy is subject to official scheme terms and eligibility checks. Sky Tech Energy assists with the application.',
+    a: 'Under PM Surya Ghar, the central government provides a verified subsidy of ₹30,000 / ₹60,000 / ₹78,000 for 1 / 2 / 3 kW rooftop systems. The subsidy is subject to official scheme terms and eligibility checks. The Sky Tech Energy assists with the application.',
   },
   {
     q: 'How long does installation take?',
@@ -179,13 +179,13 @@ export const FAQS = [
   },
   {
     q: 'What maintenance does a solar system need?',
-    a: 'Solar systems need very little day-to-day maintenance. Periodic cleaning of the panels and a routine inspection keep them generating efficiently. Sky Tech Energy remains available for support after installation.',
+    a: 'Solar systems need very little day-to-day maintenance. Periodic cleaning of the panels and a routine inspection keep them generating efficiently. The Sky Tech Energy remains available for support after installation.',
   },
 ]
 
 export const OFFERS = Array.from({ length: 3 }, (_, i) => ({
   src: `./images/instagram-post-${i + 1}.jpg`,
-  alt: `Sky Tech Energy promotional creative ${i + 1}`,
+  alt: `The Sky Tech Energy promotional creative ${i + 1}`,
 }))
 
 export const CONTACT_DEFAULTS = {

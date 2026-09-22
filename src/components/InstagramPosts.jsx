@@ -20,7 +20,7 @@ export default function InstagramPosts() {
               <div className="overflow-hidden bg-primary-100">
                 <img
                   src={offer.src}
-                  alt={`Sky Tech Energy promotional artwork ${index + 1}`}
+                  alt={`The Sky Tech Energy promotional artwork ${index + 1}`}
                   loading="lazy"
                   className="w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                 />
@@ -28,7 +28,7 @@ export default function InstagramPosts() {
               <div className="flex flex-col gap-3 p-5 sm:flex-row sm:items-center sm:justify-between">
                 <a
                   href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(
-                    `Hello Sky Tech Energy, I saw your offer on the website and I'd like to enquire.`
+                    `Hello The Sky Tech Energy, I saw your offer on the website and I'd like to enquire.`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"

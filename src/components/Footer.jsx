@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="container-site grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2 lg:col-span-1">
           <div className="flex items-center gap-2">
-            <img src="./images/logo.png" alt="" className="h-10 w-auto" />
-            <span className="text-lg font-extrabold tracking-tight">Sky Tech Energy</span>
+            <img src="./images/logo.png" alt="The Sky Tech Energy logo" className="h-10 w-auto" />
+            <span className="text-lg font-extrabold tracking-tight">The Sky Tech Energy</span>
           </div>
           <p className="mt-4 font-semibold text-accent-300">“{SITE.tagline}”</p>
           <p className="mt-2 text-sm leading-relaxed text-white/70">
@@ -58,7 +58,7 @@ export default function Footer() {
               href={`https://wa.me/${SITE.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Chat with Sky Tech Energy on WhatsApp"
+              aria-label="Chat with The Sky Tech Energy on WhatsApp"
               className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary-800 text-accent-300 transition-colors hover:bg-accent-600 hover:text-white"
             >
               <WhatsApp className="h-5 w-5" />
@@ -67,7 +67,7 @@ export default function Footer() {
               href="https://www.skytechenerg.in"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Sky Tech Energy Instagram (via website)"
+              aria-label="The Sky Tech Energy Instagram (via website)"
               title="Instagram — reachable via www.skytechenerg.in"
               className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary-800 text-accent-300 transition-colors hover:bg-accent-600 hover:text-white"
             >
@@ -83,7 +83,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-site flex flex-col items-center justify-between gap-2 py-5 text-xs text-white/60 sm:flex-row">
-          <p>© {year} Sky Tech Energy. All rights reserved.</p>
+          <p>© {year} The Sky Tech Energy. All rights reserved.</p>
           <p>“{SITE.tagline}”</p>
         </div>
       </div>
